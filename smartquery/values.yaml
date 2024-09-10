@@ -8,17 +8,17 @@ image:
   # Overrides the image tag whose default is the chart appVersion, if needed
   tag: ""
 
-env:
-  - name: SH_API_KEY
-    value: "<YourS3cr3tAPIkey>"
+env: []
+#  - name: SH_API_KEY
+#    value: "<YourS3cr3tAPIkey>"
 #    valueFrom:
 #      secretKeyRef:
 #        key: key
 #        name: searchhub-key
 #  - name: JAVA_OPTS
 #    value: "-XX:MaxRAMPercentage=90.0 -XX:+HeapDumpOnOutOfMemoryError -Dsun.net.inetaddr.ttl=30 -Dsmartquery.updateRateInSeconds=60"
-  - name: SH_INIT_TENANTS
-    value: "example.num1,example.num2"
+#  - name: SH_INIT_TENANTS
+#    value: "example.num1,example.num2"
 
 imagePullSecrets: []
 nameOverride: ""
