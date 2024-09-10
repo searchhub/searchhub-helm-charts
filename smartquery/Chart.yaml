@@ -1,0 +1,21 @@
+apiVersion: v2
+name: smartquery
+description: A smartQuery Helm chart for Kubernetes
+
+# This chart is defined as an 'application' chart, meaning it contains a collection of templates
+# that can be packaged and deployed. This chart specifically handles the deployment of the
+# smartQuery Module application of searchhub.
+
+# The smartQuery module is a key component of searchhub, responsible for mapping similar queries
+# (e.g., “skate board”, “skateboarding”, “skateboards”, “skateboard”, “scate burd”) to a single
+# optimized query known as the MasterQuery. It connects to the searchHub API to obtain necessary
+# data and to send back statistics and performance metrics related to the query mapping process.
+type: application
+
+# Helm chart version
+# This version does follow Semantic Versioning.
+version: 0.1.0
+
+# The appVersion represents the version of the smartQuery Module application being deployed.
+# This version does follow Semantic Versioning.
+appVersion: "2.2.0"

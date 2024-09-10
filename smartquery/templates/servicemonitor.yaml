@@ -1,0 +1,27 @@
+{{- if .Values.monitoring.enabled }}
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  {{- with .Values.monitoring.annotations }}
+  annotations:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+  labels:
+    {{- include "smartquery.labels" . | nindent 4 }}
+    {{- with .Values.monitoring.labels }}
+    {{- toYaml . | nindent 4 }}
+    {{- end }}
+  name: {{ include "smartquery.fullname" . }}
+  namespace: {{ .Values.monitoring.namespace }}
+spec:
+  endpoints:
+    - interval: 30s
+      path: /prometheus
+      port: http
+  namespaceSelector:
+    matchNames:
+      - {{ .Release.Namespace }}
+  selector:
+    matchLabels:
+      {{- include "smartquery.selectorLabels" . | nindent 6 }}
+{{- end }}
