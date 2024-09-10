@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  smartquery:
+  - apiVersion: v2
+    appVersion: 2.2.0
+    created: "2024-09-10T11:16:30.785467032+02:00"
+    description: A smartQuery Helm chart for Kubernetes
+    digest: 6dbb5ed8edc1d6934be52bc8171c65a294784b6f68a4f1dcba88d2b2137617ab
+    name: smartquery
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/searchhub/searchhub-helm-charts/main/smartquery-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-09-10T11:16:30.785121004+02:00"
