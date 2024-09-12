@@ -1,4 +1,5 @@
 # Default values for smartQuery.
+# For additional information look at: https://docs.searchhub.io/smartquery/rest-service.html#configuration
 
 replicaCount: 1
 
