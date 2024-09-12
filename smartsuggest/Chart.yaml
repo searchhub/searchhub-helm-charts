@@ -1,0 +1,22 @@
+apiVersion: v2
+name: smartsuggest
+description: A SmartSuggest Helm chart for Kubernetes
+
+# This chart is defined as an 'application' chart, meaning it contains a collection of templates
+# that can be packaged and deployed. This chart specifically handles the deployment of the
+# SmartSuggest Module application of searchhub.
+
+# The SmartSuggest module is a key component of searchhub, utilizing enriched and clustered
+# searchHub data to build a sophisticated suggest functionality. As a base technology,
+# Apache Lucene is used to provide fast and weighted query suggestions. It connects to the
+# searchHub API to obtain the necessary data and send back statistics and performance metrics
+# related to the suggestion process.
+type: application
+
+# Helm chart version
+# This version does follow Semantic Versioning.
+version: 0.1.0
+
+# The appVersion represents the version of the SmartSuggest Module application being deployed.
+# This version does follow Semantic Versioning.
+appVersion: "1.3.0"

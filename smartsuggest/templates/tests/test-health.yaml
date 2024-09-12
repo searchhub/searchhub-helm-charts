@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "smartsuggest.fullname" . }}-test-health"
+  labels:
+    {{- include "smartsuggest.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['--spider', '-q', '{{ include "smartsuggest.fullname" . }}:{{ .Values.service.port }}/up']
+  restartPolicy: Never
