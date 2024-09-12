@@ -3,7 +3,7 @@ entries:
   smartquery:
   - apiVersion: v2
     appVersion: 2.2.0
-    created: "2024-09-10T11:16:30.785467032+02:00"
+    created: "2024-09-12T14:40:13.081213821+02:00"
     description: A smartQuery Helm chart for Kubernetes
     digest: 6dbb5ed8edc1d6934be52bc8171c65a294784b6f68a4f1dcba88d2b2137617ab
     name: smartquery
@@ -11,4 +11,15 @@ entries:
     urls:
     - https://raw.githubusercontent.com/searchhub/searchhub-helm-charts/main/smartquery-0.1.0.tgz
     version: 0.1.0
-generated: "2024-09-10T11:16:30.785121004+02:00"
+  smartsuggest:
+  - apiVersion: v2
+    appVersion: 1.3.0
+    created: "2024-09-12T14:40:13.081469239+02:00"
+    description: A SmartSuggest Helm chart for Kubernetes
+    digest: d4ca27bbf1780c8650f2e798ade85395eb5cc406ca267e5ca4236778319ae513
+    name: smartsuggest
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/searchhub/searchhub-helm-charts/main/smartsuggest-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-09-12T14:40:13.080869036+02:00"
